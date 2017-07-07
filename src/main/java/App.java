@@ -70,7 +70,7 @@ public class App {
 
     get("/teams", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
-      model.put("teams", Category.all());
+      model.put("teams", Team.all());
       model.put("template", "templates/teams.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
