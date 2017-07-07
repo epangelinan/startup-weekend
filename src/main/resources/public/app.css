@@ -1,0 +1,13 @@
+body {
+  background: #E7F3FB;
+  font-family: fantasy;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
