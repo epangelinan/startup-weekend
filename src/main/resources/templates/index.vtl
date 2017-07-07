@@ -1,21 +1,4 @@
-<!--index.vtl-->
-<h1>Member list!</h1>
-#if ($members)
-  <ul>
-    #foreach ($member in $members)
-      <li>$member.getName()</li>
-    #end
-  </ul>
-#else
-  <p>No members!</p>
-#end
+<h1>Welcome to the Startup Weekend Team Tracker Application</h1>
 
-<p>Add a new Member:</p>
-
-<form action="/members" method="post">
-  <label for="memberName">Member Name</label>
-  <input id="memberName" name="memberName" type="text">
-
-  <button type="submit" class="btn btn-default">Add member</button>
-</form>
-<!--index.vtl-->
+<a href="/members/new">Add a new member</a>
+<a href="/members">View all current members</a>

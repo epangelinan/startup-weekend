@@ -1,0 +1,15 @@
+<!--members.vtl-->
+<h1>Member list!</h1>
+
+#if ($members)
+  <ul>
+    #foreach ($member in $members)
+      <li><a href="/members/$member.getId()">$member.getName()</a></li>
+    #end
+  </ul>
+#else
+  <p>No members!</p>
+#end
+
+<a href="/members/new">Add New Member</a>
+<!--members.vtl-->
