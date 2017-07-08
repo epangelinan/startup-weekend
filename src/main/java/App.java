@@ -25,12 +25,6 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    get("members/new", (request, response) -> {
-      Map<String, Object> model = new HashMap<String, Object>();
-      model.put("template", "templates/member-form.vtl");
-      return new ModelAndView(model, layout);
-    }, new VelocityTemplateEngine());
-
     get("/members", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
       model.put("members", Member.all());
@@ -83,10 +77,16 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    post("/members", (request, response) -> {
+    get("/members/new", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put("template", "templates/member-form.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+    post("/new-members", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
 
-      Team team = Team.find(Integer.parseInt(request.queryParams("TeamId")));
+      Team team = Team.find(Integer.parseInt(request.queryParams("teamId")));
 
       String memberName = request.queryParams("memberName");
       Member newMember = new Member(memberName);

@@ -1,7 +1,7 @@
 <!--team-members-form.vtl-->
 <h1>Add a member to $team.getName()</h1>
 
-<form action="/members" method="post">
+<form action="/new-members" method="post">
   <input id="teamId" name="teamId" type="hidden" value="$team.getId()">
 
   <div class="form-group">
@@ -11,4 +11,4 @@
 
   <button type="submit" class="btn btn-success">Add Member</button>
 </form>
-<!--category-tasks-form.vtl-->
+<!--team-members-form.vtl-->
