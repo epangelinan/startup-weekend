@@ -10,7 +10,7 @@ _This is a web page that allows a coordinator to track teams and the correspondi
 
 ## Setup/Installation Requirements
 
-* _Navigate to the project folder.  On the terminal, enter "gradle run", then enter the URL: enter the following in the browser's URL bar: http://localhost:4567/. This triggers an HTTP GET request_
+* _Navigate to the project folder.  On the terminal, enter "gradle run", then enter the following in the browser's URL bar: http://localhost:4567/._
 
 
 ## Known Bugs
