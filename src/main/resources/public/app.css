@@ -3,8 +3,12 @@ body {
   font-family: fantasy;
 }
 
-h1 {
+h1, h3 {
   text-align: center;
+}
+
+h3 {
+  color: darkBlue;
 }
 
 img {
