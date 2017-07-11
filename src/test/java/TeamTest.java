@@ -31,7 +31,7 @@ public class TeamTest {
   @Test
   public void clear_emptiesAllTeamsFromList_0() {
     Team testTeam = new Team("Guam");
-    //Team.clear();
+    Team.clear();
     assertEquals(Team.all().size(), 0);
   }
 
