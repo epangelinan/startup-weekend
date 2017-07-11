@@ -31,7 +31,7 @@ public class TeamTest {
   @Test
   public void clear_emptiesAllTeamsFromList_0() {
     Team testTeam = new Team("Guam");
-    Team.clear();
+    //Team.clear();
     assertEquals(Team.all().size(), 0);
   }
 
@@ -43,7 +43,7 @@ public class TeamTest {
 
   @Test
   public void find_returnsTeamWithSameId_secondCategory() {
-    Team.clear();
+    //Team.clear();
     Team firstTeam = new Team("Guam");
     Team secondTeam = new Team("Seattle");
     assertEquals(Team.find(secondTeam.getId()), secondTeam);
@@ -51,7 +51,7 @@ public class TeamTest {
 
   @Test
   public void getMembers_initiallyReturnsEmptyList_ArrayList() {
-    Team.clear();
+    //Team.clear();
     Team testTeam = new Team("Guam");
     assertEquals(0, testTeam.getMembers().size());
   }
