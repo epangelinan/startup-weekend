@@ -4,6 +4,11 @@ import java.time.LocalDateTime;
 
 public class MemberTest {
 
+  @Before
+  public void tearDown() {
+    Member.clear();
+  }
+
   @Test
   public void Member_instantiatesCorrectly_true() {
     Member myMember = new Member("Anthony");

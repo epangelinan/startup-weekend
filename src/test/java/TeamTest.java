@@ -3,6 +3,11 @@ import static org.junit.Assert.*;
 
 public class TeamTest {
 
+  @Before
+  public void tearDown() {
+    Team.clear();
+  }
+
   @Test
   public void team_instantiatesCorrectly_true() {
     Team testTeam = new Team("Guam");
